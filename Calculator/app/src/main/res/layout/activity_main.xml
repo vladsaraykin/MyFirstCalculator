@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:columnCount="4"
+    android:orientation="horizontal" >
+    <TextView
+        android:text=""
+        android:id="@+id/textNumber1"
+        android:layout_column="0"
+        android:layout_gravity="fill"
+
+        />
+    <TextView
+        android:text=""
+        android:id="@+id/textNumber2"
+        android:layout_column="1"
+        android:layout_gravity="fill"
+
+        />
+    <TextView
+        android:text=""
+        android:id="@+id/textResult"
+        android:layout_column="2"
+        android:layout_gravity="fill"
+
+        />
+
+    <Button
+        android:id="@+id/buttonDiv"
+        android:layout_column="3"
+        android:onClick="onClickOperator"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/button1"
+        android:onClick="onClickNumber"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:onClick="onClickNumber"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:onClick="onClickNumber"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/buttonMul"
+        android:onClick="onClickOperator"
+        android:text="*" />
+
+    <Button
+        android:id="@+id/button4"
+        android:onClick="onClickNumber"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/button5"
+        android:onClick="onClickNumber"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/button6"
+        android:onClick="onClickNumber"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/buttonMinus"
+        android:onClick="onClickOperator"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/button7"
+        android:onClick="onClickNumber"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/button8"
+        android:onClick="onClickNumber"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/button9"
+        android:onClick="onClickNumber"
+        android:text="9" />
+
+    <Button
+        android:id="@+id/buttonPlus"
+        android:layout_rowSpan="3"
+        android:onClick="onClickOperator"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/button0"
+        android:layout_column="1"
+        android:onClick="onClickNumber"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_column="0"
+        android:onClick="onClickClear"
+        android:text="C" />
+
+    <Button
+        android:id="@+id/buttonEnter"
+        android:layout_width="match_parent"
+        android:layout_column="2"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill"
+        android:layout_row="4"
+        android:onClick="getResult"
+        android:text="=" />
+
+</GridLayout>
